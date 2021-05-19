@@ -14,19 +14,23 @@
   box-sizing: border-box;
 }
 
+
 /* Adjust text insde the HTML */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height: -webkit-fill-available;
 }
 
 /* Page Setting */
 body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   display: flex;
   justify-content: center;
   align-self: center;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   background-color: #75aee071;
   font-family: Righteous;
   font-weight: 300;
