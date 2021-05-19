@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Adjust text insde the HTML */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Page Setting */
+body {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #75aee071;
+  font-family: Righteous;
+  font-weight: 300;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth !important;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  height: 85vh;
+  width: 60vw;
+  margin-top: 2%;
+  background-image: url(../img/chris-liverani-ViEBSoZH6M4-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: rgb(48, 43, 43);
+  border: 2px solid #eb84b2;
+  border-radius: 5%;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 100%;
+  background-color: #ffffff34;
+  border-radius: 5%;
+}
+.number {
+  display: inline;
+  font-size: 4rem;
+  color: #000;
+  border: 2px solid #eb84b2;
+  border-radius: 5%;
+  background-color: #fff;
+  width: 7vw;
+  height: 12vh;
+  margin: 0 1%;
+}
+
+input {
+  margin: 0 0.5%;
+  height: 5vh;
+  font-size: 1.2rem;
+  font-family: Righteous;
+  border: 3px solid #ccc;
+  -webkit-transition: all 0.5s;
+  transition: 0.5s;
+  transition: transform 1s;
+  outline: none;
+}
+
+input[type="number"] {
+  text-align: center;
+  width: 40%;
+}
+
+input:focus {
+  border: 3px solid #6d6666;
+}
+input:hover {
+  transform: scale(1.1);
+}
+
+input[type="submit"],
+input[type="button"] {
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 16vh;
+}
+
+#answer {
+  position: fixed;
+  top: 65%;
+}
+#wrongAnswer {
+  position: fixed;
+  top: 65%;
+}
+
+.correct {
+  color: #006b00;
+}
+
+.wrong {
+  color: #cf1212;
+}
+
+@media (max-width: 425px) {
+  .card {
+    height: 80%;
+    width: 90%;
+  }
+
+  .wrap {
+    display: inline;
+    margin: 89% auto;
+    font-size: 2rem;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  .number {
+    font-size: 2.5rem;
+  }
+
+  #answer {
+    left: 25%;
+  }
+  #wrongAnswer {
+    left: 20%;
+  }
+}
