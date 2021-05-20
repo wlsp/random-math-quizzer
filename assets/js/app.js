@@ -14,6 +14,8 @@ function newRatsel() {
 var resultIn = newRatsel();
 console.log(resultIn)
 
+const inputEmpty = document.getElementById('result')
+
 function resultIs() {
     var resulto = parseInt(document.getElementById('result').value)
     console.log(resulto);
@@ -27,6 +29,7 @@ function resultIs() {
         wrongAnswer.classList.add('wrong')
         wrongAnswer.innerHTML = "Try again, buddy!"
         console.log('Not correct!')
-    }
+    } 
+    inputEmpty.value = ''
 }
 
